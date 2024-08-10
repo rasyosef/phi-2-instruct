@@ -15,6 +15,9 @@ The model has underwent a post-training process that incorporates both **supervi
     - [argilla/distilabel-intel-orca-dpo-pairs](https://huggingface.co/datasets/argilla/distilabel-intel-orca-dpo-pairs)
     - [argilla/distilabel-math-preference-dpo](https://huggingface.co/datasets/argilla/distilabel-math-preference-dpo)
 
+- Final Merged Model
+    - https://huggingface.co/rasyosef/phi-2-instruct-v0.1
+
 ## How to use
 ### Chat Format
 
