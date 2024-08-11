@@ -86,3 +86,18 @@ print(output[0]['generated_text'])
 
 Note: If you want to use flash attention, call _AutoModelForCausalLM.from_pretrained()_ with _attn_implementation="flash_attention_2"_
 
+
+## Benchmarks
+
+These benchmarks were run using EleutherAI's [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)
+
+- **IFEval (Instruction Following Evaluation)**: IFEval is a fairly interesting dataset that tests the capability of models to clearly follow explicit instructions, such as “include keyword x” or “use format y”. The models are tested on their ability to strictly follow formatting instructions rather than the actual contents generated, allowing strict and rigorous metrics to be used.
+- **GSM8k (5-shot)**: diverse grade school math word problems to measure a model's ability to solve multi-step mathematical reasoning problems.
+- **MMLU (5-shot)** - a test to measure a text model's multitask accuracy. The test covers 57 tasks including elementary mathematics, US history, computer science, law, and more.
+- **TruthfulQA** - a test to measure a model's propensity to reproduce falsehoods commonly found online. Note: TruthfulQA is technically a 6-shot task in the Harness because each example is prepended with 6 Q/A pairs, even in the 0-shot setting.
+- **Winogrande (5-shot)** - an adversarial and difficult Winograd benchmark at scale, for commonsense reasoning.
+
+|Model|Size (# params)|IFEval|GSM8K|MMLU|TruthfulQA|Winogrande|
+|:----|:--------------|:-----|:----|:---|:---------|:---------|
+|[phi-2-instruct-v0.1](https://huggingface.co/rasyosef/phi-2-instruct-v0.1)|2.7B|**39.59**|**56.75**|53.5|**49.03**|**76.01**|
+|[phi-2](https://huggingface.co/microsoft/phi-2)|2.7B|26.53|56.44|**56.70**|44.48|73.72|
