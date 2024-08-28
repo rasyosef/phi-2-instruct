@@ -104,3 +104,9 @@ These benchmarks were run using EleutherAI's [lm-evaluation-harness](https://git
 |:----|:--------------|:-----|:----|:---|:---------|:---------|
 |[phi-2-instruct-v0.1](https://huggingface.co/rasyosef/phi-2-instruct-v0.1)|2.7B|**39.59**|**56.75**|53.5|**49.03**|**76.01**|
 |[phi-2](https://huggingface.co/microsoft/phi-2)|2.7B|26.53|56.44|**56.70**|44.48|73.72|
+
+## Demo
+
+Here's a colab notebook with a chat interface, you can use this to interact with the model.
+
+https://github.com/rasyosef/phi-2-instruct/blob/main/notebooks/Phi_2_chat_demo.ipynb
