@@ -3,7 +3,7 @@
 
 https://huggingface.co/rasyosef/phi-2-instruct-v0.1
 
-[Phi-2](https://huggingface.co/microsoft/phi-2) is a Transformer with **2.7 billion** parameters. It was trained using the same data sources as [Phi-1.5](https://huggingface.co/microsoft/phi-1.5), augmented with a new data source that consists of various NLP synthetic texts and filtered websites (for safety and educational value). When assessed against benchmarks testing common sense, language understanding, and logical reasoning, Phi-2 showcased a nearly state-of-the-art performance among models with less than 13 billion parameters.
+[Phi-2](https://huggingface.co/microsoft/phi-2) is a Transformer with **2.7 billion** parameters. When assessed against benchmarks testing common sense, language understanding, and logical reasoning, Phi-2 showcased a nearly state-of-the-art performance among models with less than 13 billion parameters.
 
 The model has underwent a post-training process that incorporates both **supervised fine-tuning** and **direct preference optimization** for instruction following. I used the [trl](https://huggingface.co/docs/trl/en/index) library and a single **A100 40GB** GPU during both the SFT and DPO steps.
 
