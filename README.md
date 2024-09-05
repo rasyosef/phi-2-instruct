@@ -1,5 +1,5 @@
 
-# phi-2-instruct-v0.1
+# Phi 2 Instruct
 
 https://huggingface.co/rasyosef/phi-2-instruct-v0.1
 
